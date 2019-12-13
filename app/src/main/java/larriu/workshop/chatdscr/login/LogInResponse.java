@@ -1,7 +1,7 @@
 package larriu.workshop.chatdscr.login;
 
-import larriu.workshop.chatdscr.Objects.Session;
-import larriu.workshop.chatdscr.Objects.User;
+import larriu.workshop.chatdscr.objects.Session;
+import larriu.workshop.chatdscr.objects.User;
 
 class LogInResponse {
 

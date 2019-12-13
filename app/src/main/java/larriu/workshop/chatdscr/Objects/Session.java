@@ -1,5 +1,6 @@
-package larriu.workshop.chatdscr.Objects;
+package larriu.workshop.chatdscr.objects;
 
+@SuppressWarnings("serial")
 public class Session {
 
      private String token, valid_until;

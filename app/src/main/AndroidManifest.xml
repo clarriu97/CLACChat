@@ -3,12 +3,22 @@
     package="larriu.workshop.chatdscr">
 
     <application
+        android:name=".objects.DataBase"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".main.SearchChatActivity"></activity>
+        <activity android:name=".chat.SearchInMessagesActivity" />
+        <activity android:name=".chat.ChatInfoActivity" />
+        <activity android:name=".chat.FriendProfileActivity" />
+        <activity android:name=".profile.EditProfileActivity" />
+        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".newchat.NewChatActivity" />
+        <activity android:name=".main.MainScreenActivity" />
         <activity android:name=".signin.SignInActivity" />
         <activity android:name=".login.LogInActivity">
             <intent-filter>

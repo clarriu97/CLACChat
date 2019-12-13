@@ -1,6 +1,9 @@
-package larriu.workshop.chatdscr.Objects;
+package larriu.workshop.chatdscr.objects;
 
-public class User {
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class User implements Serializable {
 
     private int id;
     private String name, email;

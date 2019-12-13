@@ -1,6 +1,8 @@
-package larriu.workshop.chatdscr.Objects;
+package larriu.workshop.chatdscr.objects;
 
-public class Message {
+import java.io.Serializable;
+
+public class Message implements Serializable {
 
     private int id;
     private String text, received_at;

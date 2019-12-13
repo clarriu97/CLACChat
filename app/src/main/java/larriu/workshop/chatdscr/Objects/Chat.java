@@ -1,16 +1,22 @@
-package larriu.workshop.chatdscr.Objects;
+package larriu.workshop.chatdscr.objects;
 
-public class Chat {
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Chat implements Serializable {
 
     private int id, participants;
     private String created_at;
-    private User[] users;
+    private List<User> users;
+    private List<Message> messageList;
 
-    public Chat(int id, int participants, String created_at, User[] users) {
+    public Chat(int id, int participants, String created_at, List<User> users) {
         this.id = id;
         this.participants = participants;
         this.created_at = created_at;
         this.users = users;
+        messageList = new ArrayList<Message>();
     }
 
     public int getId() {
@@ -25,7 +31,39 @@ public class Chat {
         return created_at;
     }
 
-    public User[] getUsers() {
+    public List<User> getUsers() {
         return users;
     }
+
+    public User getOtherUser(String userName){
+        User user1 = null;
+        /*for (int i = 0; i < users.size(); i++){
+            if (!users.get(i).getName().equals(userName)){
+                user1 = users.get(i);
+            }
+        }*/
+        if (users.size() == 2){
+            for (int i = 0; i < users.size(); i++){
+                if (!users.get(i).getName().equals(userName)){
+                    user1 = users.get(i);
+                }
+            }
+        }
+
+        if (users.size() == 1){
+            user1 = users.get(0);
+        }
+
+        return user1;
+    }
+
+    public void setMessageList(List<Message> messageList) {
+        this.messageList = messageList;
+    }
+
+    public List<Message> getMessageList() {
+        return messageList;
+    }
+
+
 }

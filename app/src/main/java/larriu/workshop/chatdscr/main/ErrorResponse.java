@@ -1,6 +1,6 @@
-package larriu.workshop.chatdscr.signin;
+package larriu.workshop.chatdscr.main;
 
-class ErrorResponse {
+public class ErrorResponse {
 
     private String description;
 

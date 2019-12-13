@@ -6,5 +6,8 @@
     <color name="ButtonAndHintText">#B4B2B2</color>
     <color name="buttons">#616161</color>
     <color name="backGroundColor">#202732</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#FFA500</color>
+    <color name="backGroundListView">#414853</color>
 
 </resources>
