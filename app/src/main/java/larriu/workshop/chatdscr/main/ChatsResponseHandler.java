@@ -8,6 +8,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import cz.msebera.android.httpclient.Header;
@@ -34,7 +35,6 @@ class ChatsResponseHandler extends AsyncHttpResponseHandler {
     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
         if (statusCode == 200){
             ChatsResponse chatsResponse = this.gson.fromJson(new String(responseBody, StandardCharsets.UTF_8), ChatsResponse.class);
-
             String result = gson.toJson(chatsResponse);
             //Toast.makeText(this.context, result, Toast.LENGTH_LONG).show();
 

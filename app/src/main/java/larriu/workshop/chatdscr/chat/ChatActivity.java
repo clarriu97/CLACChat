@@ -51,8 +51,11 @@ public class ChatActivity extends AppCompatActivity {
         gson = new Gson();
         messagesAdapter = new MessagesAdapter(this, model, chatNumber);
         listView.setAdapter(messagesAdapter);
+
+        //-------------------------------------------
         listView.setDivider(null);
         listView.setDividerHeight(5);
+        //-------------------------------------------
 
     }
 
